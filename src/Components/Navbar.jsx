@@ -12,7 +12,7 @@ const Navbar = () => {
                 <p>Tours & Travels Ltd.</p>
             </div>
           <div className="buttons">
-            <button>All Country</button>
+            <button onClick={HandelCountry}>All Country</button>
             <button>Bangladesh</button>
             <button>Pakistan</button>
             <button>Dubai</button>

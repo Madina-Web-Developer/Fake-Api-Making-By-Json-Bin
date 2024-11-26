@@ -2,7 +2,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import './App.css'
 import Api from './Components/Api'
 import Home from './Components/Pages/Home'
-import Navbar from './Components/Navbar'
+
 
 
 function App() {
@@ -18,10 +18,11 @@ function App() {
 
   return (
     <>
-     <Navbar/>
+     
      <RouterProvider router={myRoute}/>
     </>
   )
 }
 
 export default App
+

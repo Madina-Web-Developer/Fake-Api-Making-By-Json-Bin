@@ -2,12 +2,12 @@ button{
 
     @apply bg-white text-black text-[16px] font-bold rounded-sm
 
-     hover:bg-yellow-300 active:scale-[1.1] w-[120px] p-2
+     hover:bg-yellow-300 active:scale-[1.1] w-[110px] p-2
 }
 
 .buttons{
 
-    @apply flex gap-[40px]
+    @apply flex gap-[30px]
 }
 
 img{

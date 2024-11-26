@@ -1,7 +1,7 @@
 
 .main_sing{
 
-    @apply mt-[100px]   flex flex-wrap gap-14 justify-center
+    @apply mt-[85px]   flex flex-wrap gap-14 justify-center
 }
 
 
@@ -9,7 +9,8 @@
 
     @apply flex gap-1 bg-white w-[450px] justify-between items-center border-[1px] border-[#8dbefb]
 
-     rounded-md hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]
+     rounded-md hover:shadow-[0px_2px_13px_3px_rgba(0,_0,_0,_0.3)]
+
 }
 
 h3{
@@ -17,17 +18,19 @@ h3{
 }
 
 .text{
-    @apply text-[12px] text-[#393939] w-[160px] mt-3 font-medium 
+    @apply text-[13px] text-[#393939] w-full mt-3 font-medium 
 }
 
 .img_div{
 
-    @apply overflow-hidden rounded-sm
+    @apply overflow-hidden rounded-tl-md rounded-bl-md
 }
 
 .img_div img{
 
-    @apply w-[400px] h-[240px]  hover:scale-[1.1]  transition-[.6s] rounded-sm
+    @apply w-[400px] h-[250px]  hover:scale-[1.1]  transition-[3s]
+
+    rounded-tl-md rounded-bl-md
 }
 
 h1{
@@ -36,7 +39,7 @@ h1{
 
 .place{
 
-    @apply py-[1px] pl-2 w-[300px]
+    @apply  pl-2 pr-2 w-[300px] py-[1px]
 }
 
 .cost{
@@ -63,10 +66,42 @@ span{
 
     @apply text-[16px] font-bold hover:text-white mt-2 hover:bg-black text-center w-[79px]
 
-    rounded-sm bg-yellow-400 text-black
+    rounded-sm bg-yellow-400 text-black 
 } 
 
 .bu{
 
-    @apply flex justify-end items-end 
+    @apply flex justify-end items-end pb-2
+}
+
+
+
+button{
+
+    @apply bg-white text-black text-[16px] font-bold rounded-sm
+
+     hover:bg-yellow-300 active:scale-[1.1] w-[110px] p-2
+}
+
+.buttons{
+
+    @apply flex gap-[30px]
+}
+
+img{
+
+    @apply w-[90px]
+}
+
+.main{
+    @apply flex justify-between items-center
+}
+
+.img{
+
+    @apply flex  items-center
+}
+
+p{
+    @apply   text-[25px] font-bold text-black
 }
