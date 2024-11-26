@@ -1,0 +1,72 @@
+
+.main_sing{
+
+    @apply mt-[100px]   flex flex-wrap gap-14 justify-center
+}
+
+
+.single_card{
+
+    @apply flex gap-1 bg-white w-[450px] justify-between items-center border-[1px] border-[#8dbefb]
+
+     rounded-md hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]
+}
+
+h3{
+    @apply text-[35px] text-black font-serif text-center mt-10 font-bold
+}
+
+.text{
+    @apply text-[12px] text-[#393939] w-[160px] mt-3 font-medium 
+}
+
+.img_div{
+
+    @apply overflow-hidden rounded-sm
+}
+
+.img_div img{
+
+    @apply w-[400px] h-[240px]  hover:scale-[1.1]  transition-[.6s] rounded-sm
+}
+
+h1{
+    @apply text-[20px] font-bold text-blue-600 
+}
+
+.place{
+
+    @apply py-[1px] pl-2 w-[300px]
+}
+
+.cost{
+    @apply text-[15px] font-bold text-green-600 mt-2
+}
+
+
+.C{
+    @apply text-[15px] font-bold text-green-600
+}
+
+.co{
+
+    @apply flex justify-end
+}
+
+span{
+
+    @apply text-[15px] font-bold text-rose-700
+}
+
+.bu .d{
+
+
+    @apply text-[16px] font-bold hover:text-white mt-2 hover:bg-black text-center w-[79px]
+
+    rounded-sm bg-yellow-400 text-black
+} 
+
+.bu{
+
+    @apply flex justify-end items-end 
+}
