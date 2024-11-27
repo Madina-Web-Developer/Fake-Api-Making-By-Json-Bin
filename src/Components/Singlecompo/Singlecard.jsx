@@ -47,7 +47,7 @@ console.log(data)
             </div>
           <div className="buttons">
     
-            <button >All Country</button>
+            <button onClick={()=>setCountryData(data)}>All Country</button>
             <button onClick={()=>handelConbutton('Bangladesh')} >Bangladesh</button>
             <button onClick={()=>handelConbutton('Pakistan')} >Pakistan</button>
             <button onClick={()=>handelConbutton('Malaysia')} >Malaysia</button>
