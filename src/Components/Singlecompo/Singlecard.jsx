@@ -7,28 +7,32 @@ const Singlecard = () => {
 
     const [data , setData] = useState([])
 
-    const [cdata, setCdata] = useState([])
+    const [countrydata, setCountryData] = useState([])
+
+   
   
 
     useEffect(()=>{
 
         fetch('https://api.jsonbin.io/v3/b/67463a37ad19ca34f8d0ec5a')
      .then((response) => response.json())
-     .then((json) =>{setData(json.record), setCdata(json.record)})
+     .then((json) =>{setData(json.record), setCountryData(json.record)})
     
     },[])
 
-    const handelConbutton = (CountryData) =>{
+    const handelConbutton = (ButtonData) =>{
 
         const filterData = data.filter((item) => {
 
-           return item.Country == CountryData
+           return item.Country == ButtonData
         })    
 
-       setCdata(filterData)
+        setCountryData(filterData)
     }
 
+   
 
+console.log(data)
 
   return (
 
@@ -42,11 +46,12 @@ const Singlecard = () => {
                 <p>Tours & Travels Ltd.</p>
             </div>
           <div className="buttons">
+    
             <button >All Country</button>
-            <button onClick={()=>handelConbutton("Bangladesh")} >Bangladesh</button>
-            <button  >Pakistan</button>
-            <button >Malaysia</button>
-            <button >Dubai</button>
+            <button onClick={()=>handelConbutton('Bangladesh')} >Bangladesh</button>
+            <button onClick={()=>handelConbutton('Pakistan')} >Pakistan</button>
+            <button onClick={()=>handelConbutton('Malaysia')} >Malaysia</button>
+            <button onClick={()=>handelConbutton('Dubai')}>Dubai</button>
           </div>
         </div>
    </nav>
@@ -58,7 +63,7 @@ const Singlecard = () => {
     <div className="main_sing">
 
         {
-            data.map((item)=>(
+            countrydata.map((item)=>(
 
         <div key={item.id} className="single_card">
 
